@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mhqNetAPP.Web", "mhqNetAPP.Web\mhqNetAPP.Web.csproj", "{5E5CC12F-D3FB-448A-8262-90A875DFF4D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mhqNetAPP.Web", "mhqNetAPP.Web\mhqNetAPP.Web.csproj", "{5E5CC12F-D3FB-448A-8262-90A875DFF4D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mhqNetAPP.DAL", "mhqNetAPP.DAL\mhqNetAPP.DAL.csproj", "{0AE09E88-E1FA-4424-87FC-F54C3A5691F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mhqNetAPP.Model", "mhqNetAPP.Model\mhqNetAPP.Model.csproj", "{80C408D7-3D22-415E-825E-8F59A34D7ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5E5CC12F-D3FB-448A-8262-90A875DFF4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E5CC12F-D3FB-448A-8262-90A875DFF4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E5CC12F-D3FB-448A-8262-90A875DFF4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE09E88-E1FA-4424-87FC-F54C3A5691F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE09E88-E1FA-4424-87FC-F54C3A5691F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE09E88-E1FA-4424-87FC-F54C3A5691F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE09E88-E1FA-4424-87FC-F54C3A5691F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C408D7-3D22-415E-825E-8F59A34D7ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C408D7-3D22-415E-825E-8F59A34D7ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C408D7-3D22-415E-825E-8F59A34D7ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C408D7-3D22-415E-825E-8F59A34D7ADA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

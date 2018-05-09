@@ -12,26 +12,10 @@ namespace mhqNetAPP.Web.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            //测试添加
+            //new DAL.UserDAL().Add(new Model.User() { username = "kongkong", password = "123" });
+            return Content("你好，Hello 约跑吧 ！");
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

@@ -19,4 +19,9 @@
     <Folder Include="Areas\appapi\Views\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\mhqNetAPP.DAL\mhqNetAPP.DAL.csproj" />
+    <ProjectReference Include="..\mhqNetAPP.Model\mhqNetAPP.Model.csproj" />
+  </ItemGroup>
+
 </Project>
