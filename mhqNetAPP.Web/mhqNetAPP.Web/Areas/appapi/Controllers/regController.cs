@@ -32,11 +32,22 @@ namespace mhqNetAPP.Web.Areas.appapi.Controllers
                 return Json(new { status = "n", info = "用户已被注册，请重新输入！" });
             }
             //否则就加入数据库
-            udal.Add(new Model.User() { username = username, password = password });
+           int userid= udal.Add(new Model.User() { username = username, password = password });
             
             //语法糖 4.5以上才能用 ，原始的  info = "恭喜您（+username+）注册成功！" 
 
-            return Json(new { status = "y", info = $"恭喜您（{username}）注册成功！" });
+            return Json(
+                new {
+                    status = "y",
+                    info = $"恭喜您（{username}）注册成功！",
+                    userid = userid,
+                    // face = Tool.GetHostUrl() + $"/{u.face}"  ,  //upload//aa.jpg -》http://mhqapp.net/upload/aa.jpg
+
+                    face = "upload/face.jpg" ,
+                    username = username,
+                    usertype = "普通会员" 
+
+                });
 
         }
     }

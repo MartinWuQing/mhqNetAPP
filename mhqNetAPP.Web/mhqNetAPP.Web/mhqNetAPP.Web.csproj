@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="新文件夹1\**" />
+    <Content Remove="新文件夹1\**" />
+    <EmbeddedResource Remove="新文件夹1\**" />
+    <None Remove="新文件夹1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
@@ -22,6 +29,12 @@
   <ItemGroup>
     <ProjectReference Include="..\mhqNetAPP.DAL\mhqNetAPP.DAL.csproj" />
     <ProjectReference Include="..\mhqNetAPP.Model\mhqNetAPP.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Niunan.Utility">
+      <HintPath>E:\Download\BaiduyunDownload\牛腩学用MUI做手机APP\相关资料\牛腩公用类库\Niunan.Utility.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
